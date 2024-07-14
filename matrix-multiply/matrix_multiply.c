@@ -48,6 +48,7 @@ matrix* make_matrix(int rows, int cols) {
     new_matrix->values[i] = (int*)malloc(sizeof(int) * cols);
   }
 
+  free_matrix(&new_matrix);
   return new_matrix;
 }
 
